@@ -24,8 +24,8 @@ production:
     adapter: mysql2
     encoding: utf8
     database: blog
-    username: rails_blog_user
-    password: pwd
-    host: 15.125.52.141
+    username: root
+    password: newrelic
+    host: localhost
+    socket: mysql
     port: 3306
-    pool: 10
