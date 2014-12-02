@@ -42,7 +42,6 @@ set :log_level, :debug
 # Default value for keep_releases is 5
 set :keep_releases, 5
 
-
 namespace :deploy do
  
   desc 'Restart application'
@@ -66,3 +65,5 @@ namespace :deploy do
   end
  
 end
+
+after "deploy:updated", "newrelic:notice_deployment"
